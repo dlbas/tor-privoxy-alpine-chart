@@ -18,17 +18,10 @@ service:
 
 # some additional stuff here
 # for example
-#sentryHostIp: "192.168.83.24"
-#mongodbHostIp: "192.168.83.31"
-#rabbitmqHostIp: "192.168.83.27"
 
 environmentVariables:
 # environment variables go here
 # for example:
-#  tor-privoxy-alpine-chart_MONGODB_DSN: "mongodb://tor-privoxy-alpine-chart-mongodb"
-#  tor-privoxy-alpine-chart_RABBITMQ_HOST: "tor-privoxy-alpine-chart-rabbitmq"
-#  tor-privoxy-alpine-chart_RABBITMQ_PORT: "5672"
-#  SENTRY_DSN: "http://91722b57dd0a4890b122773feb85fcfa@tor-privoxy-alpine-chart-sentry:9000/32"
 
 ingress:
   enabled: false
