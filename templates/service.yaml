@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: {{ include "tor-privoxy-alpine-chart.fullname" . }}
+  labels:
+{{ include "tor-privoxy-alpine-chart.labels" . | indent 4 }}
+spec:
+  type: {{ .Values.service.type }}
+  ports:
+    - port: {{ .Values.service.port }}
+  selector:
+    app.kubernetes.io/name: {{ include "tor-privoxy-alpine-chart.name" . }}
+    app.kubernetes.io/instance: {{ .Release.Name }}
+
